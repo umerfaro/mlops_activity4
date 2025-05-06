@@ -1,49 +1,34 @@
-# Wine Dataset RandomForest with MLflow
+# 🍷 Wine Dataset Classification with RandomForest & MLflow
 
-This project trains a RandomForestClassifier on the Wine dataset and logs metrics, parameters, and the model to MLflow.
+This project trains a **RandomForestClassifier** on the classic **Wine dataset** using scikit-learn, and logs parameters, metrics, and the model itself with **MLflow** for experiment tracking.
 
-## Setup
+---
 
-1. Create a virtual environment:
+## 📦 Project Overview
 
-```
+- **Goal:** Classify different types of wine using chemical features.
+- **Model:** RandomForestClassifier
+- **Tracking:** MLflow
+- **Dataset:** [Scikit-learn Wine dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#wine-dataset)
+
+---
+
+## 🔧 Environment Setup
+
+1. **Create a virtual environment**
+
+```bash
 python -m venv venv
-```
-
-2. Activate the virtual environment:
-
-- On Windows:
 
 ```
+```bash
 venv\Scripts\activate
 ```
-
-- On Unix or MacOS:
-
-```
-source venv/bin/activate
-```
-
-3. Install the required packages:
-
-```
+```bash
 pip install -r requirements.txt
-```
-
-## Running the Code
-
-To train the model and log to MLflow:
 
 ```
-python train_wine_rf.py
-```
-
-## Viewing MLflow Results
-
-Start the MLflow UI to view the experiment results:
-
-```
-mlflow ui
-```
-
-Then open a browser and navigate to http://localhost:5000 to view the experiment results.
+.
+├── train_wine_rf.py          # Training script with MLflow integration
+├── requirements.txt          # List of dependencies
+└── README.md                 # This file
